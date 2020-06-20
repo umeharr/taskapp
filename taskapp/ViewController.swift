@@ -13,9 +13,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     @IBAction func prusButton(_ sender: Any) {
         performSegue(withIdentifier: "toInputViewController",sender: nil)
     }
-    @IBOutlet weak var prusButton: UIBarButtonItem!
-    
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var prusButton: UIBarButtonItem!
     
     @IBOutlet weak var categorySearchTextField: UITextField!
     let realm = try! Realm()
