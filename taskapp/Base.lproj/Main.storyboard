@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4048" y="-1106"/>
+            <point key="canvasLocation" x="4048" y="-1046"/>
         </scene>
         <!--Input View Controller-->
         <scene sceneID="abt-sG-CX7">
@@ -125,6 +125,11 @@
                                     <constraint firstAttribute="height" constant="120" id="j7x-xM-WZD"/>
                                 </constraints>
                             </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9k8-Nd-dGw">
+                                <rect key="frame" x="10" y="470" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -133,12 +138,15 @@
                             <constraint firstItem="3PK-A4-o5r" firstAttribute="top" secondItem="dI8-IJ-cF1" secondAttribute="bottom" constant="10" id="8yz-sD-11U"/>
                             <constraint firstItem="3PK-A4-o5r" firstAttribute="leading" secondItem="0RD-4h-ZcU" secondAttribute="leading" constant="10" id="N1o-SD-Ewm"/>
                             <constraint firstItem="dcB-rZ-1a3" firstAttribute="top" secondItem="3PK-A4-o5r" secondAttribute="bottom" constant="10" id="QGa-TD-RJX"/>
+                            <constraint firstItem="0RD-4h-ZcU" firstAttribute="trailing" secondItem="9k8-Nd-dGw" secondAttribute="trailing" constant="10" id="UT7-GB-FF8"/>
                             <constraint firstItem="EeC-pS-16j" firstAttribute="top" secondItem="0RD-4h-ZcU" secondAttribute="top" constant="10" id="VTp-xo-6UI"/>
                             <constraint firstAttribute="trailing" secondItem="ge6-da-rH5" secondAttribute="trailing" id="aqb-Bc-aQv"/>
                             <constraint firstItem="0RD-4h-ZcU" firstAttribute="trailing" secondItem="EeC-pS-16j" secondAttribute="trailing" constant="10" id="ayp-qL-Zbd"/>
                             <constraint firstItem="dcB-rZ-1a3" firstAttribute="leading" secondItem="0RD-4h-ZcU" secondAttribute="leading" constant="10" id="dsL-Uz-qg0"/>
                             <constraint firstItem="EeC-pS-16j" firstAttribute="leading" secondItem="0RD-4h-ZcU" secondAttribute="leading" constant="10" id="epk-WU-4ZN"/>
+                            <constraint firstItem="9k8-Nd-dGw" firstAttribute="top" secondItem="ge6-da-rH5" secondAttribute="bottom" constant="10" id="esJ-T7-DZx"/>
                             <constraint firstItem="0RD-4h-ZcU" firstAttribute="trailing" secondItem="dI8-IJ-cF1" secondAttribute="trailing" constant="10" id="gxp-gx-Pcg"/>
+                            <constraint firstItem="9k8-Nd-dGw" firstAttribute="leading" secondItem="0RD-4h-ZcU" secondAttribute="leading" constant="10" id="jlJ-PM-kAV"/>
                             <constraint firstItem="dI8-IJ-cF1" firstAttribute="leading" secondItem="0RD-4h-ZcU" secondAttribute="leading" constant="10" id="nSi-Mv-xar"/>
                             <constraint firstItem="ge6-da-rH5" firstAttribute="top" secondItem="dcB-rZ-1a3" secondAttribute="bottom" constant="10" id="rVc-8I-Rw1"/>
                             <constraint firstItem="ge6-da-rH5" firstAttribute="leading" secondItem="0RD-4h-ZcU" secondAttribute="leading" id="uAc-h9-Xop"/>
@@ -148,6 +156,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="6u3-Eu-Uij"/>
                     <connections>
+                        <outlet property="categoryTextField" destination="9k8-Nd-dGw" id="Al2-9c-3qr"/>
+                        <outlet property="categoryTextView" destination="9k8-Nd-dGw" id="eIl-ei-mJC"/>
                         <outlet property="contentsTextView" destination="dcB-rZ-1a3" id="pW4-hD-kzh"/>
                         <outlet property="datePicker" destination="ge6-da-rH5" id="Dp1-e1-Vps"/>
                         <outlet property="titleTextField" destination="dI8-IJ-cF1" id="Dty-4Z-grk"/>
