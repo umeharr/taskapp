@@ -25,7 +25,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Qtu-Y4-mDw" detailTextLabel="fHU-82-JlS" style="IBUITableViewCellStyleSubtitle" id="r34-PK-qaQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Qtu-Y4-mDw" detailTextLabel="fHU-82-JlS" style="IBUITableViewCellStyleSubtitle" id="r34-PK-qaQ">
                                         <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r34-PK-qaQ" id="hIS-Ef-TJ0">
@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4048" y="-1046"/>
+            <point key="canvasLocation" x="4047.826086956522" y="-1046.6517857142858"/>
         </scene>
         <!--Input View Controller-->
         <scene sceneID="abt-sG-CX7">
@@ -157,7 +157,6 @@
                     <navigationItem key="navigationItem" id="6u3-Eu-Uij"/>
                     <connections>
                         <outlet property="categoryTextField" destination="9k8-Nd-dGw" id="Al2-9c-3qr"/>
-                        <outlet property="categoryTextView" destination="9k8-Nd-dGw" id="eIl-ei-mJC"/>
                         <outlet property="contentsTextView" destination="dcB-rZ-1a3" id="pW4-hD-kzh"/>
                         <outlet property="datePicker" destination="ge6-da-rH5" id="Dp1-e1-Vps"/>
                         <outlet property="titleTextField" destination="dI8-IJ-cF1" id="Dty-4Z-grk"/>
